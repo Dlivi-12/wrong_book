@@ -13,23 +13,23 @@ export default new VueRouter({
 				{
 					path:'/index/',
 					name:'home',
-					component: () => import('../components/index.vue'),
+					component: () => import('../components/home/index.vue'),
 				},{
 					path:'/index/addquestions',
 					name:'addquestions',
-					component: () => import('../components/addQuestions.vue'),
+					component: () => import('../components/add/addQuestions.vue'),
 				},{
 					path:'/index/viewQuestions',
 					name:'viewQuestions',
-					component: () => import('../components/viewQuestions.vue'),
+					component: () => import('../components/view/viewQuestions.vue'),
 				},{
 					path:'/index/loveQuestions',
 					name:'loveQuestions',
-					component: () => import('../components/loveQuestions.vue'),
+					component: () => import('../components/favorites/loveQuestions.vue'),
 				},{
 					path:'/index/removeQuestions',
 					name:'removeQuestions',
-					component: () => import('../components/removeQuestions.vue'),
+					component: () => import('../components/recycleBin/removeQuestions.vue'),
 				},
 			]
         }
